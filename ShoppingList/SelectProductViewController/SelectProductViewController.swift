@@ -54,7 +54,10 @@ extension SelectProductViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let product = products[indexPath.row]
         
-        let viewController = SelectProductViewController()
+        let viewController = DetailsViewController()
+        viewController.product = product // przymyslec w domu !!
+        
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
 }

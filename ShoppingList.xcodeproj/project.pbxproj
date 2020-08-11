@@ -17,6 +17,8 @@
 		582AAE4724D85F5B0042D8C4 /* SelectProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AAE4524D85F5B0042D8C4 /* SelectProductViewController.xib */; };
 		582AAE4C24D86A470042D8C4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582AAE4A24D86A470042D8C4 /* ProductTableViewCell.swift */; };
 		582AAE4D24D86A470042D8C4 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AAE4B24D86A470042D8C4 /* ProductTableViewCell.xib */; };
+		5837C63524E2EC440050CA41 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5837C63324E2EC440050CA41 /* DetailsViewController.swift */; };
+		5837C63624E2EC440050CA41 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5837C63424E2EC440050CA41 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		582AAE4524D85F5B0042D8C4 /* SelectProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectProductViewController.xib; sourceTree = "<group>"; };
 		582AAE4A24D86A470042D8C4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		582AAE4B24D86A470042D8C4 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		5837C63324E2EC440050CA41 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5837C63424E2EC440050CA41 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		58089DD324D6CB2300DCF830 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				5837C63224E2EC090050CA41 /* DetailsViewController */,
 				582AAE4824D8698B0042D8C4 /* SelectProductViewController */,
 				58089DD424D6CB2300DCF830 /* AppDelegate.swift */,
 				58089DD624D6CB2300DCF830 /* SceneDelegate.swift */,
@@ -93,6 +98,15 @@
 				582AAE4B24D86A470042D8C4 /* ProductTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5837C63224E2EC090050CA41 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5837C63324E2EC440050CA41 /* DetailsViewController.swift */,
+				5837C63424E2EC440050CA41 /* DetailsViewController.xib */,
+			);
+			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 				582AAE4D24D86A470042D8C4 /* ProductTableViewCell.xib in Resources */,
 				58089DDE24D6CB2600DCF830 /* Assets.xcassets in Resources */,
 				58089DDC24D6CB2300DCF830 /* Main.storyboard in Resources */,
+				5837C63624E2EC440050CA41 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +187,7 @@
 				58089DD524D6CB2300DCF830 /* AppDelegate.swift in Sources */,
 				582AAE4C24D86A470042D8C4 /* ProductTableViewCell.swift in Sources */,
 				582AAE4624D85F5B0042D8C4 /* SelectProductViewController.swift in Sources */,
+				5837C63524E2EC440050CA41 /* DetailsViewController.swift in Sources */,
 				58089DD724D6CB2300DCF830 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

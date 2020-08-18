@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="ShoppingList" customModuleProvider="target">
             <connections>
+                <outlet property="CategoryImage" destination="6Uy-sP-WfC" id="W3M-Fj-FaC"/>
                 <outlet property="productLabel" destination="n62-Sd-3vF" id="mTq-r9-nMS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,6 +25,11 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-sP-WfC">
+                    <rect key="frame" x="20" y="84" width="374" height="131"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -31,7 +37,7 @@
                 <constraint firstItem="n62-Sd-3vF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="PAY-3e-Nni"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="128" y="114"/>
+            <point key="canvasLocation" x="127.53623188405798" y="113.83928571428571"/>
         </view>
     </objects>
 </document>

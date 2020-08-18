@@ -52,10 +52,10 @@ extension SelectProductViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = products[indexPath.row]
+        let product = products[indexPath.row] // ; row-zawiera numer kliknietego wiersza
         
         let viewController = DetailsViewController()
-        viewController.product = product // przymyslec w domu !!
+        viewController.product = product // szczegóły jakiejs kategorii kliknietej
         
         navigationController?.pushViewController(viewController, animated: true)
     }

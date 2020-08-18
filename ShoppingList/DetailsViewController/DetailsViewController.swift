@@ -11,15 +11,21 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     @IBOutlet weak var productLabel: UILabel!
+    @IBOutlet weak var CategoryImage: UIImageView!
     
     var product: ProductType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        productLabel.text = product?.rawValue
+        let categoryName = product?.rawValue
+        
+        productLabel.text = categoryName
+        
+        CategoryImage.image = UIImage(named:categoryName!)
     }
-
+    
+    //switch z obazkami
 
     /*
     // MARK: - Navigation

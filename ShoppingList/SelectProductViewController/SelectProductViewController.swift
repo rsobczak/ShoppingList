@@ -12,6 +12,8 @@ enum ProductType: String {
     case bread = "Bread"
     case dairy = "Dairy"
     case fruitsAndVegetables = "Fruits and vegetables"
+    case drinks = "Drinks"
+    case houseHoldChemicals = "House hold chemicals"
     case others = "Other"
 }
 
@@ -24,6 +26,8 @@ class SelectProductViewController: UIViewController {
         .bread,
         .dairy,
         .fruitsAndVegetables,
+        .drinks,
+        .houseHoldChemicals,
         .others
     ]
     

@@ -10,31 +10,34 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    @IBOutlet weak var productLabel: UILabel!
-    @IBOutlet weak var CategoryImage: UIImageView!
-    
+   // @IBOutlet weak var productLabel: UILabel!
+  //  @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
+
     var product: ProductType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
 
-        let categoryName = product?.rawValue
-        
-        productLabel.text = categoryName
-        
-        CategoryImage.image = UIImage(named:categoryName!)
+}
+
+extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        product?.items.count ?? 0
     }
     
-    //switch z obazkami
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let item = product?.items[indexPath.row] // odwłanie sie do elementu tablicy
+        
+        cell.textLabel?.text = item?.name
+        return cell
     }
-    */
-
+    
+    
 }

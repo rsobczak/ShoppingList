@@ -9,8 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="ShoppingList" customModuleProvider="target">
             <connections>
-                <outlet property="CategoryImage" destination="6Uy-sP-WfC" id="W3M-Fj-FaC"/>
-                <outlet property="productLabel" destination="n62-Sd-3vF" id="mTq-r9-nMS"/>
+                <outlet property="tableView" destination="ZDa-EP-gwD" id="lxX-xV-UHw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,22 +18,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n62-Sd-3vF">
-                    <rect key="frame" x="186" y="442.5" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-sP-WfC">
-                    <rect key="frame" x="20" y="84" width="374" height="131"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZDa-EP-gwD">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XH2-HU-BHC"/>
+                        <outlet property="delegate" destination="-1" id="X1j-lL-L5A"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="n62-Sd-3vF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2yl-PH-b8G"/>
-                <constraint firstItem="n62-Sd-3vF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="PAY-3e-Nni"/>
+                <constraint firstItem="ZDa-EP-gwD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HWh-Lv-1je"/>
+                <constraint firstItem="ZDa-EP-gwD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jgg-r2-gOb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZDa-EP-gwD" secondAttribute="bottom" id="WcW-06-NRo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZDa-EP-gwD" secondAttribute="trailing" id="mMo-Ly-SGI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="127.53623188405798" y="113.83928571428571"/>

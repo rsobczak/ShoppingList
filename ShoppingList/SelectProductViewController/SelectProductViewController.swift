@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct Product {
+    var name: String
+    var imageName: String
+}
+
 enum ProductType: String {
     case bread = "Bread"
     case dairy = "Dairy"
@@ -15,6 +20,29 @@ enum ProductType: String {
     case drinks = "Drinks"
     case houseHoldChemicals = "House hold chemicals"
     case others = "Other"
+    
+    var items: [Product] {
+        switch self {
+        case .bread:
+            return [
+            .init(name: "Chleb", imageName: "chleb_ikona"),
+            .init(name: "Bułka", imageName: "buleczka_ikona"),
+            .init(name: "Rogal", imageName: "robal_ikona"),
+            .init(name: "Rogalik francuski", imageName: "rogalik_francuski_ikona"),
+            .init(name: "Kajzerka", imageName:"kajzerka_ikona")
+            ]
+        case .dairy:
+            return []
+        case .fruitsAndVegetables:
+            return []
+        case .drinks:
+            return []
+        case .houseHoldChemicals:
+            return []
+        case .others:
+            return []
+        }
+    }
 }
 
 class SelectProductViewController: UIViewController {

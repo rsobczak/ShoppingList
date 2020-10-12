@@ -65,7 +65,7 @@ class SelectProductViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+       tableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
 }
 
@@ -77,9 +77,9 @@ extension SelectProductViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ProductTableViewCell
-        
+  
         cell.titleLabel?.text = products[indexPath.row].rawValue
-        
+  
         return cell
     }
     
